@@ -22,7 +22,7 @@ public class MonitorWorker extends Thread{
             public void run() {
                 processMetricFromBuffer();
             }
-        }, 0, 3000);
+        }, 0, 60000);
     }
 
     public void processMetricFromBuffer() {
